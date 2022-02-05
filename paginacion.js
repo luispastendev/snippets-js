@@ -36,13 +36,13 @@ const paginate = (totalRows, totalRowsPerPage, currentPage, wildcard) => {
   return pagination;
 }
 
-// < 1 [2] >      
-// < 1 [2] 3 ... 5>      
-// < 1 ... 9 [10] 11 >      
-// < 1 [2] 3 ... 11 >       
-// < 1 ... 3 [4] 5 ... 11 > 
+const registros = 50
+const registrosPorPagina = 3
+const paginaActual = 13
+const separador = '...'
+paginate(registros, registrosPorPagina, paginaActual, separador);
 
-console.log("============ PAGINANDO ============")
-paginate(50, 4, 5, '...');
+console.log("===================================")
+console.log("===================================")
 console.log("===================================")
 
