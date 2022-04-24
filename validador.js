@@ -46,6 +46,10 @@ class Validation {
         return messages[key];
     }
 
+    reset() {
+        this.errors = {};
+    }
+
     get getErrors() {
         return this.errors;
     }
